@@ -143,17 +143,8 @@ function getBook(id) {
   return data.find((d) => d.id === id);
 }
 // Destrectiong
-// old
-
-// const title = book.title
-// const id = book.id
-
-// new
 const book = getBook(1);
-
 const books = data
-
-/*/
 
 // const {title, author, genres, publicationDate} = getBook(3)
 const { title, author, genres, publicationDate, pages } = book;
@@ -252,7 +243,6 @@ const sortOfPages = books.slice().sort((a,b) => {
 })
 sortOfPages
 
-
 // Add  object to array 
 const newObject = {
   id: 99,
@@ -270,9 +260,6 @@ newObjectAfterDleted;
 // Update object from array
 const newObjectAfterUpdated = books.map((book) => book.id === 1 ?{...book,  pages : 100, author: 'Riner Borack' }: book);
 newObjectAfterUpdated;
-
-*/
-
 
 // Asyncrounas js Promise (fetch data)
 // send request to api for get some data
